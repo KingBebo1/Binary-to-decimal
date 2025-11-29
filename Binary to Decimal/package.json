@@ -2,7 +2,7 @@
   "name": "package",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://<your-username>.github.io/Binary-to-decimal/",
+  "homepage": "https://kingbebo1.github.io/Binary-to-decimal/",
   "type": "module",
   "scripts": {
     "dev": "vite",
