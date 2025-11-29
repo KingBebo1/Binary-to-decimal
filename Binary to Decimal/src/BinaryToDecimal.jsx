@@ -10,19 +10,21 @@ function BinaryToDecimal(){
     }
 
     function convertToDecimal(){
+        const cleanInput = inputValue.replace(/\s+/g, "");
+
         let decimal = 0;
         let power = 1;
 
 
-        for(let i = inputValue.length - 1; i >= 0; i--){
-            if(Number(inputValue[i]) === 1 || Number(inputValue[i]) === 0){
-                decimal += Number(inputValue[i]) * power;
+        for(let i = cleanInput.length - 1; i >= 0; i--){
+            if(Number(cleanInput[i]) === 1 || Number(cleanInput[i]) === 0){
+                decimal += Number(cleanInput[i]) * power;
                 power *= 2;
             }
             else{
                 window.alert("You have entered something that is not a binary number")
                 handleRefresh();
-                break
+                break;
             }
         }
 
