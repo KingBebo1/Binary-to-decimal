@@ -14,6 +14,16 @@ function DecimalToBinary(){
             return;
         }
 
+        if(!Number.isInteger(num)){
+            window.alert("Please enter a whole number");
+            return;
+        }
+
+        if(num < 0){
+            window.alert("Please enter a positive integer");
+            return;
+        }
+
         setResult(num.toString(2));
 
 
