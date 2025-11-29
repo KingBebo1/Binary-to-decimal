@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css"
 
 function BinaryToDecimal(){
     const [inputValue, setInputValue] = useState("");
@@ -29,8 +30,10 @@ function BinaryToDecimal(){
     }
 
     return(
-        <div>
+        <div id="container">
+            <h1>Binary to Decimal convertor</h1>
             <input value={inputValue} placeholder="Enter Binary here" onChange={(e) => setInputValue(e.target.value)} />
+            <br /><br />
 
             <button onClick={convertToDecimal}>Convert</button>
             <p>Result: {result}</p>
